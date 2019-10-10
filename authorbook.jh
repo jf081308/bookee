@@ -1,0 +1,15 @@
+entity Author {
+	name String,
+    lastName String
+}
+
+entity Book {
+	title String,
+    isbn String
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Author{book} to Book
+}
+
